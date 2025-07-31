@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapak Ayang - Top Up Robux Terpercaya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            /* Base Monochromatic Colors */
+            --color-light: #E7E2E0;
+            --color-medium: #D9C5BA;
+            --color-dark: #C9A793;
+            
+            /* Pop Color - Blue */
+            --color-pop: #9c796c;
+            --color-pop-dark: #2980B9;
+            --color-pop-light: #9c796c;
+            
+            /* Text Colors */
+            --text-primary: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --text-light: #8a8a8a;
+            --text-on-pop: #ffffff;
+            
+            /* Shadows with pop color */
+            --shadow-sm: 0 1px 2px 0 rgba(52, 152, 219, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(52, 152, 219, 0.15), 0 2px 4px -2px rgba(52, 152, 219, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(52, 152, 219, 0.2), 0 4px 6px -4px rgba(52, 152, 219, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(52, 152, 219, 0.25), 0 8px 10px -6px rgba(52, 152, 219, 0.1);
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--color-pop) 0%, var(--color-pop-light) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--color-dark) 0%, var(--color-medium) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--color-pop) 0%, var(--color-pop-dark) 100%);
+            --gradient-bg: linear-gradient(135deg, var(--color-light) 0%, var(--color-medium) 50%, var(--color-dark) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--gradient-bg);
+            min-height: 100vh;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        /* Header Styles */
+        .header {
+            background: rgba(231, 226, 224, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(52, 152, 219, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 800;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-image {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .logo-image:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text .lapak {
+            color: #C9A793;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .logo-text .ayang {
+            color: #9c796c;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-item a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-item a:hover {
+            color: var(--color-pop);
+        }
+
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-pop);
+            transition: width 0.3s ease;
+        }
+
+        .nav-item a:hover::after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            width: 300px;
+            padding: 0.75rem 1rem 0.75rem 3rem;
+            border: 2px solid var(--color-medium);
+            border-radius: 50px;
+            background: var(--color-light);
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            color: var(--text-primary);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--color-pop);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .search-input::placeholder {
+            color: var(--text-light);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            color: var(--text-light);
+            z-index: 1;
+        }
+
+        .icon-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: none;
+            background: var(--color-medium);
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .icon-btn:hover {
+            background: var(--color-pop);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--color-pop);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        .hero-content {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(52, 152, 219, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            color: var(--color-pop);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            text-shadow: 0 2px 4px rgba(52, 152, 219, 0.1);
+        }
+
+        .hero-title .highlight {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--text-on-pop);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+            background: var(--gradient-accent);
+        }
+
+        .btn-secondary {
+            background: rgba(217, 197, 186, 0.3);
+            color: var(--text-primary);
+            border: 2px solid var(--color-medium);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-medium);
+            color: var(--text-primary);
+            transform: translateY(-2px);
+            border-color: var(--color-pop);
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-pop);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: slideInRight 1s ease-out;
+        }
+
+        .hero-card {
+            background: rgba(231, 226, 224, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(52, 152, 219, 0.2);
+        }
+
+        .character-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .character-image {
+            width: 200px;
+            height: 200px;
+            background: url('/placeholder.svg?height=200&width=200&text=Robux+Character') center/contain no-repeat;
+            margin: 0 auto 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .price-display {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-value {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .stats-container {
+            background: rgba(231, 226, 224, 0.7);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(52, 152, 219, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--color-pop);
+            display: block;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(231, 226, 224, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            background: var(--color-light);
+            border-color: var(--color-pop);
+        }
+
+        .feature-card-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--gradient-primary);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .feature-card-desc {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .search-input {
+                width: 200px;
+            }
+
+            .logo-text {
+                display: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-section {
+                margin: 1rem;
+                padding: 0 1rem;
+            }
+
+            .stats-container {
+                padding: 1.5rem 1rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+            }
+
+            .stat-number {
+                font-size: 1.6rem;
+            }
+
+            .stat-label {
+                font-size: 0.7rem;
+            }
+
+            .features-section {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: var(--gradient-primary);
+            z-index: 9999;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-indicator"></div>
+    
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="/coomponent/Lapak ayang (2).png" alt="Lapak Ayang Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="lapak">Lapak</span>
+                    <span class="ayang">Ayang</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#packages">Packages</a></li>
+                <li class="nav-item"><a href="#how-it-works">How It Works</a></li>
+                <li class="nav-item"><a href="#support">Support</a></li>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Cari paket Robux...">
+                </div>
+                
+                <button class="icon-btn" title="Notifications">
+                    <i class="fas fa-bell"></i>
+                </button>
+                
+                <button class="icon-btn" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">3</span>
+                </button>
+                
+                <button class="icon-btn" title="User Profile">
+                    <i class="fas fa-user"></i>
+                </button>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    Terpercaya sejak 2020
+                </div>
+                
+                <h1 class="hero-title">
+                    Dompet tipis? Avatar <span class="highlight">nangis?</span><br>
+                    Saatnya isi Robux tanpa drama!
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Cuma di sini, top up santai kayak di pantai! Dapatkan Robux impianmu dalam hitungan menit dengan harga terbaik dan layanan 24/7.
+                </p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="topUpNow()">
+                        <i class="fas fa-rocket"></i>
+                        Top Up Sekarang
+                    </button>
+                    <button class="btn btn-secondary" onclick="viewPackages()">
+                        <i class="fas fa-gift"></i>
+                        Lihat Paket
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span>100% Aman</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span>Instan 24/7</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <span>Harga Terbaik</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="character-container">
+                        <div class="character-image"></div>
+                        <h3>Premium Robux Package</h3>
+                    </div>
+                    
+                    <div class="price-display">
+                        <div class="price-label">Harga Spesial Hari Ini</div>
+                        <div class="price-value">Rp 14.000/100 R$</div>
+                    </div>
+                    
+                    <button class="btn btn-primary" style="width: 100%;" onclick="quickBuy()">
+                        <i class="fas fa-lightning-bolt"></i>
+                        Beli Sekarang
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Stats Section with Split Price -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="163857">0</span>
+                        <div class="stat-label">Stock Tersedia</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">Rp 14,000</span>
+                        <div class="stat-label">Price (IDR)</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">100 R$</span>
+                        <div class="stat-label">Robux Amount</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="134456">0</span>
+                        <div class="stat-label">Terjual</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">25 R$</span>
+                        <div class="stat-label">Minimum Top up</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="28929">0</span>
+                        <div class="stat-label">Total order</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">Kenapa Pilih Lapak Ayang?</h2>
+                <p class="section-subtitle">
+                    Kami memberikan pengalaman top up terbaik dengan layanan premium dan harga yang kompetitif
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-card-title">Proses Instan</h3>
+                    <p class="feature-card-desc">
+                        Robux langsung masuk ke akun Anda dalam hitungan detik setelah pembayaran berhasil
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3 class="feature-card-title">100% Aman</h3>
+                    <p class="feature-card-desc">
+                        Sistem keamanan berlapis dan enkripsi data untuk melindungi informasi pribadi Anda
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-card-title">Support 24/7</h3>
+                    <p class="feature-card-desc">
+                        Tim customer service siap membantu Anda kapan saja melalui live chat dan WhatsApp
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.querySelector('.scroll-indicator').style.width = scrolled + '%';
+        });
+
+        // Header scroll effect
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Animated counter for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString('id-ID');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString('id-ID');
+                }
+            }, 16);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate counters
+                    const counters = entry.target.querySelectorAll('[data-target]');
+                    counters.forEach(counter => {
+                        if (!counter.classList.contains('animated')) {
+                            counter.classList.add('animated');
+                            const target = parseInt(counter.getAttribute('data-target'));
+                            animateCounter(counter, target);
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe stats section
+        document.querySelectorAll('.stats-container').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Button interactions
+        function topUpNow() {
+            const btn = event.target;
+            const ripple = document.createElement('span');
+            const rect = btn.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}px;
+                top: ${y}px;
+                background: rgba(255,255,255,0.3);
+                border-radius: 50%;
+                transform: scale(0);
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+            
+            btn.style.position = 'relative';
+            btn.style.overflow = 'hidden';
+            btn.appendChild(ripple);
+            
+            setTimeout(() => ripple.remove(), 600);
+            showTopUpModal();
+        }
+
+        function viewPackages() {
+            document.querySelector('#packages')?.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function quickBuy() {
+            showTopUpModal();
+        }
+
+        function showTopUpModal() {
+            const modal = document.createElement('div');
+            modal.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(52, 152, 219, 0.3);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                    backdrop-filter: blur(5px);
+                ">
+                    <div style="
+                        background: #E7E2E0;
+                        padding: 2rem;
+                        border-radius: 20px;
+                        max-width: 400px;
+                        width: 90%;
+                        text-align: center;
+                        box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3);
+                        animation: modalSlideIn 0.3s ease-out;
+                        border: 2px solid rgba(52, 152, 219, 0.2);
+                    ">
+                        <div style="
+                            width: 60px;
+                            height: 60px;
+                            background: linear-gradient(135deg, #3498DB 0%, #5DADE2 100%);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto 1rem;
+                            color: white;
+                            font-size: 1.5rem;
+                        ">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 style="margin-bottom: 1rem; color: #2c2c2c;">Top Up Robux</h3>
+                        <p style="color: #5a5a5a; margin-bottom: 2rem;">
+                            Fitur ini akan segera tersedia! Terima kasih atas kesabaran Anda.
+                        </p>
+                        <button onclick="this.closest('div').remove()" style="
+                            background: linear-gradient(135deg, #3498DB 0%, #5DADE2 100%);
+                            color: white;
+                            border: none;
+                            padding: 0.75rem 2rem;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            transition: all 0.3s ease;
+                        " onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                            Tutup
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+        }
+
+        // Enhanced search functionality
+        const searchInput = document.querySelector('.search-input');
+        searchInput.addEventListener('input', debounce((e) => {
+            const query = e.target.value;
+            if (query.length > 2) {
+                searchInput.style.borderColor = 'var(--color-pop)';
+                console.log('Searching for:', query);
+            } else {
+                searchInput.style.borderColor = 'var(--color-medium)';
+            }
+        }, 300));
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(2);
+                    opacity: 0;
+                }
+            }
+            
+            @keyframes modalSlideIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50px) scale(0.9);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+            
+            @keyframes pulse {
+                0%, 100% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+            }
+            
+            .btn-primary:active {
+                animation: pulse 0.3s ease;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
